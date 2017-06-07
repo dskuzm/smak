@@ -1,4 +1,37 @@
-
-
-
-
+.title {
+    text-align: center;
+    span {
+        color: #515151;
+        text-transform: uppercase;
+        margin-bottom: 11px;
+        display: inline-block;
+    }
+    h3 {
+        font-weight: bold;
+        color: $black;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 35px;
+        letter-spacing: -1.1px;
+        word-spacing: -2px;
+        &:after {
+            display: block;
+            content: "";
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            margin-left: -85px;
+            width: 170px;
+            height: 3px;
+            background: $yellow;
+        }
+    }
+    &-description {
+        font-weight: 100;
+        line-height: 25px;
+        word-spacing: 1px;
+        letter-spacing: 0.1px;
+        max-width: 970px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,39 @@
+.services {
+    padding-top: 55px;
+    padding-bottom: 65px;
+    .title {
+        margin-bottom: 60px;
+    }
+    &-column {
+        text-align: center;
+        .circle {
+            height: 106px;
+            width: 106px;
+            border-radius: 100%;
+            border: 1px solid transparent;
+            background: $yellow;
+            transition: 0.3s ease-out;
+            text-align: center;
+            line-height: 100px;
+            color: $white;
+            font-size: 2.438em;
+            margin: 0 auto 17px;
+            &:hover {
+                color: $yellow;
+                background: $white;
+                transition: 0.3s ease-in;
+                border-color: #131316;
+            }
+        }
+        h4 {
+            color: #131316;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        &-description {
+            font-weight: 300;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+    }
+}

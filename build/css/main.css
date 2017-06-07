@@ -1,12 +1,13 @@
 html {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald';
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  width: 1920px;
   height: 100%;
 }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald';
   font-size: 16px;
   font-weight: normal;
   -webkit-box-sizing: border-box;
@@ -57,7 +58,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald';
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -151,7 +152,7 @@ textarea {
 /* Firefox 18- */
 
 :-ms-input-placeholder {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald';
   font-size: 16px;
 }
 
@@ -182,16 +183,54 @@ h2 {
   line-height: 1.2;
 }
 
-.container {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+h3 {
+  font-size: 2em;
 }
 
-.no-scroll {
-  overflow: hidden;
+h4 {
+  font-size: 1.250em;
+}
+
+.title {
+  text-align: center;
+}
+
+.title span {
+  display: inline-block;
+  margin-bottom: 11px;
+  text-transform: uppercase;
+  color: #515151;
+}
+
+.title h3 {
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 35px;
+  letter-spacing: -1.1px;
+  word-spacing: -2px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.title h3:after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  display: block;
+  width: 170px;
+  height: 3px;
+  margin-left: -85px;
+  content: '';
+  background: #ffe600;
+}
+
+.title-description {
+  font-weight: 100;
+  line-height: 25px;
+  max-width: 970px;
+  margin: 0 auto;
+  letter-spacing: .1px;
+  word-spacing: 1px;
 }
 
 header {
@@ -432,6 +471,60 @@ header .container {
 .home-text button {
   width: 230px;
   text-transform: uppercase;
+}
+
+.services {
+  padding-top: 55px;
+  padding-bottom: 65px;
+}
+
+.services .title {
+  margin-bottom: 60px;
+}
+
+.services-column {
+  text-align: center;
+}
+
+.services-column .circle {
+  font-size: 2.438em;
+  line-height: 100px;
+  width: 106px;
+  height: 106px;
+  margin: 0 auto 17px;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  text-align: center;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  background: #ffe600;
+}
+
+.services-column .circle:hover {
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  color: #ffe600;
+  border-color: #131316;
+  background: #fff;
+}
+
+.services-column h4 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #131316;
+}
+
+.services-column-description {
+  font-weight: 300;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .services-column {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 768px) {

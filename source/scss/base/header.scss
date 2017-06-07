@@ -20,7 +20,7 @@ header {
             position: relative;
             display: inline-block;
             margin-left: 48px;
-            &:not(: last-child):after {
+            &:not(:last-child):after {
                 display: block;
                 content: "";
                 position: absolute;
