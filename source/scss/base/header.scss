@@ -1,0 +1,143 @@
+header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    transition: 0.3s ease;
+    .logo {
+        float: left;
+        line-height: 82px;
+        height: 100%;
+    }
+    .header-nav {
+        float: right;
+        line-height: 97px;
+        height: 100%;
+        li {
+            position: relative;
+            display: inline-block;
+            margin-left: 48px;
+            &:not(: last-child):after {
+                display: block;
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 5px;
+                margin-top: -2.5px;
+                top: 50%;
+                background: $yellow;
+                right: -26px;
+            }
+            a {
+                position: relative;
+                text-transform: uppercase;
+                font-size: 0.875em;
+                color: $white;
+                font-weight: bold;
+                text-decoration: none;
+                transition: 0.4s ease;
+                &:hover {
+                    color: $yellow;
+                    transition: 0.3s ease;
+                    text-decoration: none;
+                }
+                &:focus,
+                &:active {
+                    opacity: 0.5;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+    .container {
+        height: 100%;
+        line-height: 100px;
+    }
+}
+
+.burger-icon {
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 16px;
+    cursor: pointer;
+    display: none;
+    z-index: 99999;
+    .stripe1,
+    .stripe2,
+    .stripe3 {
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        transition: all 0.3s ease-out;
+        outline: none;
+        background: $yellow;
+    }
+    .stripe1 {
+        top: 0;
+    }
+    .stripe2 {
+        top: 7px
+    }
+    .stripe3 {
+        top: 14px
+    }
+}
+
+.nav-open {
+    overflow: hidden;
+    header {
+        .burger-icon {
+            .stripe1,
+            .stripe3 {
+                height: 3px;
+                transition: 4s ease-in;
+            }
+            .stripe1 {
+                animation: burgerStripe1Rotate 800ms;
+                animation-fill-mode: forwards;
+                animation-timing-function: 0.2s ease-out;
+            }
+            .stripe2 {
+                transition: all .4s ease-out;
+                transform: scale(0);
+            }
+            .stripe3 {
+                animation: burgerStripe3Rotate 800ms;
+                animation-fill-mode: forwards;
+                animation-timing-function: 0.2s ease-out;
+            }
+        }
+        .header-nav {
+            transition: 0.3s ease;
+            left: 0;
+        }
+    }
+}
+
+@keyframes burgerStripe1Rotate {
+    30% {
+        top: 7px;
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-135deg);
+        top: 7px;
+    }
+}
+
+@keyframes burgerStripe3Rotate {
+    30% {
+        top: 7px;
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(135deg);
+        top: 7px;
+    }
+}
