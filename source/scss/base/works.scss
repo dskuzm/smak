@@ -1,0 +1,81 @@
+.works {
+    padding-top: 60px;
+    .title {
+        margin-bottom: 55px;
+    }
+    &-tabs {
+        .tab {
+            display: flex;
+            align-items: center;
+        }
+        ul {
+            margin-bottom: 58px;
+            .ui-tabs-active {
+                a {
+                    color: $yellow;
+                }
+            }
+            text-align: center;
+            li {
+                display: inline-block;
+                position: relative;
+                margin-right: 50px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:not(:last-child):after {
+                    position: absolute;
+                    top: 50%;
+                    right: -26px;
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    margin-top: -2.5px;
+                    content: '';
+                    background: #ffe600;
+                }
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #515151;
+                    outline: none;
+                }
+            }
+        }
+        .tab-image {
+            display: inline-block;
+            width: 100%;
+            max-width: 670px;
+            height: 100%;
+            min-height: 440px;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .tab-text {
+            display: inline-block;
+            max-width: 400px;
+            vertical-align: top;
+            padding: 0 0 0 30px;
+            box-sizing: border-box;
+            h5 {
+                font-weight: 500;
+                word-spacing: -3px;
+                margin-bottom: 15px;
+            }
+            p {
+                line-height: 25px;
+                font-weight: 100;
+                word-spacing: 1.8px;
+                margin-bottom: 19px;
+            }
+            button{
+                text-transform: none;
+                &:hover{
+                    background: #131316;
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}

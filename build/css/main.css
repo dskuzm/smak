@@ -196,6 +196,10 @@ h4 {
   font-size: 1.250em;
 }
 
+h5 {
+  font-size: 1.563em;
+}
+
 .title {
   text-align: center;
 }
@@ -481,7 +485,6 @@ header .container {
 
 .services {
   padding-top: 55px;
-  padding-bottom: 65px;
 }
 
 .services .title {
@@ -578,6 +581,103 @@ header .container {
   margin: 0 auto;
 }
 
+.works {
+  padding-top: 60px;
+}
+
+.works .title {
+  margin-bottom: 55px;
+}
+
+.works-tabs .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.works-tabs ul {
+  margin-bottom: 58px;
+  text-align: center;
+}
+
+.works-tabs ul .ui-tabs-active a {
+  color: #ffe600;
+}
+
+.works-tabs ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.works-tabs ul li:last-child {
+  margin-right: 0;
+}
+
+.works-tabs ul li:not(:last-child):after {
+  position: absolute;
+  top: 50%;
+  right: -26px;
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin-top: -2.5px;
+  content: '';
+  background: #ffe600;
+}
+
+.works-tabs ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #515151;
+  outline: none;
+}
+
+.works-tabs .tab-image {
+  display: inline-block;
+  width: 100%;
+  max-width: 670px;
+  height: 100%;
+  min-height: 440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.works-tabs .tab-text {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 400px;
+  padding: 0 0 0 30px;
+  vertical-align: top;
+}
+
+.works-tabs .tab-text h5 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  word-spacing: -3px;
+}
+
+.works-tabs .tab-text p {
+  font-weight: 100;
+  line-height: 25px;
+  margin-bottom: 19px;
+  word-spacing: 1.8px;
+}
+
+.works-tabs .tab-text button {
+  text-transform: none;
+}
+
+.works-tabs .tab-text button:hover {
+  color: #ffe600;
+  background: #131316;
+}
+
 @media (max-width: 992px) {
   .services-column {
     margin-bottom: 50px;
@@ -643,6 +743,24 @@ header .container {
 
   .home-text h2 {
     font-size: 2.500em;
+  }
+
+  .works-tabs ul li {
+    margin: 0 5px;
+  }
+
+  .works-tabs ul li:not(:last-child):after {
+    display: none;
+  }
+
+  .works-tabs .tab-image {
+    display: none;
+  }
+
+  .works-tabs .tab-text {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
   }
 }
 

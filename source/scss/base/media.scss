@@ -67,6 +67,28 @@
             }
         }
     }
+//    woks
+    .works{
+        &-tabs {
+            ul{
+            li{
+                margin: 0 5px;
+                &:not(:last-child):after{
+                    display: none;
+                }
+            }
+            }
+            .tab-image{
+                display: none;
+            }
+            .tab-text{
+                padding: 0;
+                    text-align: center;
+    margin: 0 auto;
+            }
+
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {}

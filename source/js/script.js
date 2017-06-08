@@ -9,3 +9,11 @@ $(function () {
             $('body').removeClass('nav-open');
         });
 });
+
+
+
+//works-tabs
+
+$( function() {
+    $( ".works-tabs" ).tabs();
+  } );
