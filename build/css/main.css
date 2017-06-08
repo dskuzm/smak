@@ -1,8 +1,15 @@
+@font-face {
+  font-family: 'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('./fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+}
+
 html {
   font-family: 'Oswald';
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 1920px;
   height: 100%;
 }
 
@@ -175,12 +182,10 @@ h6 {
 
 h1 {
   font-size: 3.071em;
-  font-weight: 100;
 }
 
 h2 {
   font-size: 4.063em;
-  line-height: 1.2;
 }
 
 h3 {
@@ -462,6 +467,7 @@ header .container {
 }
 
 .home-text h2 {
+  line-height: 1.2;
   max-width: 750px;
   margin: 0 auto 40px;
   text-transform: uppercase;
@@ -482,11 +488,15 @@ header .container {
   margin-bottom: 60px;
 }
 
-.services-column {
+.services-line-top {
+  padding-bottom: 67px;
+}
+
+.services-line-top .services-column {
   text-align: center;
 }
 
-.services-column .circle {
+.services-line-top .services-column .circle {
   font-size: 2.438em;
   line-height: 100px;
   width: 106px;
@@ -501,7 +511,7 @@ header .container {
   background: #ffe600;
 }
 
-.services-column .circle:hover {
+.services-line-top .services-column .circle:hover {
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
   color: #ffe600;
@@ -509,15 +519,62 @@ header .container {
   background: #fff;
 }
 
-.services-column h4 {
+.services-line-top .services-column h4 {
   margin-bottom: 15px;
   text-transform: uppercase;
   color: #131316;
 }
 
-.services-column-description {
+.services-line-top .services-column-description {
   font-weight: 300;
   max-width: 280px;
+  margin: 0 auto;
+}
+
+.services-line-bottom {
+  padding-top: 52px;
+  padding-bottom: 75px;
+  background: #131a1d;
+}
+
+.services-line-bottom .title {
+  margin-bottom: 65px;
+}
+
+.services-line-bottom .title h3 {
+  margin-bottom: 12px;
+  color: #ffe600;
+}
+
+.services-line-bottom .title h3:after {
+  display: none;
+}
+
+.services-line-bottom .title-description {
+  color: #fff;
+}
+
+.services-line-bottom .services-column {
+  text-align: center;
+  color: #fff;
+}
+
+.services-line-bottom .services-column i {
+  font-size: 2.500em;
+  margin: 0 auto 25px;
+  text-align: center;
+  color: #ffe600;
+}
+
+.services-line-bottom .services-column h4 {
+  margin-bottom: 19px;
+  text-transform: uppercase;
+}
+
+.services-line-bottom .services-column-description {
+  font-weight: 300;
+  line-height: 20px;
+  max-width: 170px;
   margin: 0 auto;
 }
 
