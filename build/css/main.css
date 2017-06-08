@@ -242,6 +242,10 @@ h5 {
   word-spacing: 1px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 header {
   position: fixed;
   z-index: 999;
@@ -583,7 +587,6 @@ header .container {
 
 .works {
   padding-top: 60px;
-  padding-bottom: 67px;
 }
 
 .works .container .title {
@@ -635,6 +638,8 @@ header .container {
 }
 
 .works-tabs ul li a {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
   text-decoration: none;
   text-transform: uppercase;
   color: #515151;
@@ -744,9 +749,49 @@ header .container {
   margin-bottom: 57px;
 }
 
+.works-title-bottom button {
+  margin-bottom: 67px;
+}
+
 .works-title-bottom button:hover {
   color: #ffe600;
   background: #131316;
+}
+
+.works-pride {
+  padding-top: 52px;
+  background: #131a1d;
+}
+
+.works-pride .title {
+  color: #fff;
+}
+
+.works-pride .title h3 {
+  color: #fff;
+}
+
+.works-pride-item {
+  display: inline-block;
+  float: none;
+  width: 100%;
+  max-width: 270px;
+  margin: 0 15px 64px;
+  padding: 20px 0 35px;
+  text-align: center;
+  text-align: center;
+  border: 1px solid #ffe600;
+}
+
+.works-pride-item span {
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #fff;
+}
+
+.works-pride-item p {
+  text-transform: uppercase;
+  color: #ffe600;
 }
 
 @media (max-width: 1200px) {

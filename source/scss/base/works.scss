@@ -1,6 +1,6 @@
 .works {
     padding-top: 60px;
-    padding-bottom: 67px;
+    //    padding-bottom: 67px;
     .container {
         .title {
             margin-bottom: 55px;
@@ -43,6 +43,7 @@
                     text-decoration: none;
                     color: #515151;
                     outline: none;
+                    transition: .3s ease;
                 }
             }
         }
@@ -127,8 +128,39 @@
             margin-bottom: 57px;
         }
         button {
+            margin-bottom: 67px;
             &:hover {
                 background: #131316;
+                color: $yellow;
+            }
+        }
+    }
+    &-pride {
+        background: #131a1d;
+        padding-top: 52px;
+        .title {
+            color: $white;
+            h3 {
+                color: $white;
+            }
+        }
+        &-item {
+            display: inline-block;
+            float: none;
+            text-align: center;
+            border: 1px solid $yellow;
+            text-align: center;
+            margin: 0 15px 64px;
+            width: 100%;
+            max-width: 270px;
+            padding: 20px 0 35px;
+            span {
+                color: $white;
+                font-size: 2.5em;
+                font-weight: 900;
+            }
+            p {
+                text-transform: uppercase;
                 color: $yellow;
             }
         }
