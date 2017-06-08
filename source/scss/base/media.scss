@@ -2,7 +2,12 @@
 
 @media (max-width: 1440px) {}
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+    //works
+    .works-portfolio-line-botom {
+        display: none;
+    }
+}
 
 @media (max-width: 992px) {
     //services
@@ -67,26 +72,33 @@
             }
         }
     }
-//    woks
-    .works{
+    //works
+    .works {
         &-tabs {
-            ul{
-            li{
-                margin: 0 5px;
-                &:not(:last-child):after{
-                    display: none;
+            ul {
+                li {
+                    margin: 0 5px;
+                    &:not(:last-child):after {
+                        display: none;
+                    }
                 }
             }
-            }
-            .tab-image{
+            .tab-image {
                 display: none;
             }
-            .tab-text{
+            .tab-text {
                 padding: 0;
-                    text-align: center;
-    margin: 0 auto;
+                text-align: center;
+                margin: 0 auto;
             }
-
+        }
+        &-portfolio {
+            padding: 0 15px;
+            &-line-botom {}
+            &-item {
+                max-width: 400px;
+                margin: 0 auto 50px;
+            }
         }
     }
 }

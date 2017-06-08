@@ -1,9 +1,13 @@
 .works {
     padding-top: 60px;
-    .title {
-        margin-bottom: 55px;
+    padding-bottom: 67px;
+    .container {
+        .title {
+            margin-bottom: 55px;
+        }
     }
     &-tabs {
+        margin-bottom: 63px;
         .tab {
             display: flex;
             align-items: center;
@@ -48,7 +52,7 @@
             max-width: 670px;
             height: 100%;
             min-height: 440px;
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -69,12 +73,63 @@
                 word-spacing: 1.8px;
                 margin-bottom: 19px;
             }
-            button{
+            button {
                 text-transform: none;
-                &:hover{
+                &:hover {
                     background: #131316;
                     color: $yellow;
                 }
+            }
+        }
+    }
+    &-portfolio {
+        margin-bottom: 53px;
+        .works-portfolio-item {
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+            &:hover .works-portfolio-item-overlay {
+                transition: .3s ease-in;
+                opacity: 1;
+                top: 0;
+                bottom: 0;
+            }
+            height: 250px;
+            &-overlay {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                position: absolute;
+                top: -100%;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(245, 228, 42, 0.8);
+                color: $white;
+                text-transform: uppercase;
+                transition: .4s ease;
+                opacity: 0;
+                text-decoration: none;
+            }
+        }
+    }
+    &-title-bottom {
+        h3 {
+            margin-bottom: 14px;
+            &:after {
+                display: none;
+            }
+        }
+        p {
+            margin-bottom: 57px;
+        }
+        button {
+            &:hover {
+                background: #131316;
+                color: $yellow;
             }
         }
     }

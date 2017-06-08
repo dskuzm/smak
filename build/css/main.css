@@ -583,10 +583,15 @@ header .container {
 
 .works {
   padding-top: 60px;
+  padding-bottom: 67px;
 }
 
-.works .title {
+.works .container .title {
   margin-bottom: 55px;
+}
+
+.works-tabs {
+  margin-bottom: 63px;
 }
 
 .works-tabs .tab {
@@ -678,6 +683,78 @@ header .container {
   background: #131316;
 }
 
+.works-portfolio {
+  margin-bottom: 53px;
+}
+
+.works-portfolio .works-portfolio-item {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.works-portfolio .works-portfolio-item:hover .works-portfolio-item-overlay {
+  top: 0;
+  bottom: 0;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  opacity: 1;
+}
+
+.works-portfolio .works-portfolio-item-overlay {
+  position: absolute;
+  top: -100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0;
+  color: #fff;
+  background-color: rgba(245, 228, 42, .8);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.works-title-bottom h3 {
+  margin-bottom: 14px;
+}
+
+.works-title-bottom h3:after {
+  display: none;
+}
+
+.works-title-bottom p {
+  margin-bottom: 57px;
+}
+
+.works-title-bottom button:hover {
+  color: #ffe600;
+  background: #131316;
+}
+
+@media (max-width: 1200px) {
+  .works-portfolio-line-botom {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
   .services-column {
     margin-bottom: 50px;
@@ -761,6 +838,15 @@ header .container {
     margin: 0 auto;
     padding: 0;
     text-align: center;
+  }
+
+  .works-portfolio {
+    padding: 0 15px;
+  }
+
+  .works-portfolio-item {
+    max-width: 400px;
+    margin: 0 auto 50px;
   }
 }
 
