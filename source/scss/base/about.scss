@@ -1,0 +1,138 @@
+.about {
+    padding-top: 60px;
+    .title {
+        margin-bottom: 90px;
+    }
+    &-item {
+        margin-bottom: 55px;
+        &-icon {
+            display: inline-block;
+            height: 70px;
+            width: 70px;
+            border-radius: 100%;
+            background: $yellow;
+            line-height: 65px;
+            text-align: center;
+            color: $white;
+            font-size: 1.500em;
+            margin-right: 30px;
+            vertical-align: top;
+        }
+        &-text {
+            display: inline-block;
+            max-width: 460px;
+            font-weight: 100;
+            &-title {
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+            p {
+                line-height: 25px;
+            }
+        }
+    }
+    &-team {
+        background: #fbfbfb;
+        padding-top: 50px;
+        .title {
+            margin-bottom: 55px;
+            h3 {
+                margin-bottom: 15px;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        &-item {
+            position: static;
+            &-user {
+                text-align: center;
+                text-transform: uppercase;
+                background: $white;
+                border-bottom: 2px solid #e1e6e6;
+                position: relative;
+                &:after {
+                    display: block;
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-left: 25px solid transparent;
+                    border-right: 25px solid transparent;
+                    border-bottom: 18px solid #131316;
+                    position: absolute;
+                    left: 50%;
+                    margin-left: -12px;
+                    bottom: -66px;
+                    display: none;
+                }
+                &-photo {
+                    display: block;
+                    background: red;
+                    width: 270px;
+                    height: 250px;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    background-size: cover;
+                    background-position: top center;
+                    background-repeat: no-repeat;
+                }
+                h4 {
+                    color: $yellow;
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    transition: .4s ease;
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: .4s ease;
+                    }
+                }
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+            &-hide {
+                background: #131316;
+                height: 300px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: auto;
+                margin-top: 65px;
+                padding-top: 65px;
+                display: none;
+                text-align: left;
+                h4 {
+                    text-transform: uppercase;
+                    color: $yellow;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                p {
+                    line-height: 25px;
+                    color: $white;
+                    max-width: 770px;
+                    margin-bottom: 25px;
+                }
+                .social {
+                    a {
+                        border: 1px solid $white;
+                        height: 37px;
+                        width: 37px;
+                        color: $white;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 37px;
+                        margin-right: 20px;
+                        transition: .3s ease-out;
+                        &:hover {
+                            color: $yellow;
+                            border-color: $yellow;
+                            transition: .3s ease-in;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

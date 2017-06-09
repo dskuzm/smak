@@ -7,6 +7,36 @@
     .works-portfolio-line-botom {
         display: none;
     }
+    .works-pride-item{
+        display: inline-block;
+        float: none;
+    }
+//about
+    .about {
+    .title{
+    }
+    &-item {
+        text-align: center;
+        &-icon {
+            display: block;
+            margin: 0 auto 15px;
+        }
+        &-text {
+            &-title {
+            }
+            p{
+            }
+        }
+    }
+        &-team{
+            &-item {
+                    display: inline-block;
+    float: none;
+    margin: 0 10px 50px;
+    width: 300px;
+            }
+        }
+}
 }
 
 @media (max-width: 992px) {
