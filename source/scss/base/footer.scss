@@ -1,0 +1,25 @@
+footer {
+    background: #131316;
+    text-align: center;
+    color: $white;
+    padding: 20px 0;
+    p {
+        margin-bottom: 20px;
+    }
+    span {
+        color: $yellow;
+    }
+    a {
+        color: $white;
+        margin: 0 10px;
+        transition: .3s ease-out;
+        &:hover{
+            color: $yellow;
+            transition: .3s ease-in;
+        }
+        &:focus, &:active{
+            opacity: 0.7;
+            transition: .3s ease-in;
+        }
+    }
+}

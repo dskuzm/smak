@@ -9,8 +9,18 @@ header {
     transition: 0.3s ease;
     .logo {
         float: left;
-        line-height: 82px;
         height: 100%;
+            display: table;
+        a{
+            line-height: 1;
+                display: table-cell;
+            vertical-align: middle;
+            img{
+
+                display: table-cell;
+            vertical-align: middle;
+            }
+        }
     }
     .header-nav {
         float: right;
@@ -120,6 +130,13 @@ header {
     }
 }
 
+.fixed-header{
+    height: 70px;
+    transition: .5 ease-in;
+    .header-nav{
+        line-height: 70px;
+    }
+}
 @keyframes burgerStripe1Rotate {
     30% {
         top: 7px;
