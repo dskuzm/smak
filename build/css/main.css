@@ -272,6 +272,9 @@ header .logo a {
 
 header .logo a img {
   display: table-cell;
+  max-height: 60px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
   vertical-align: middle;
 }
 
@@ -279,6 +282,8 @@ header .header-nav {
   line-height: 97px;
   float: right;
   height: 100%;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
 }
 
 header .header-nav li {
@@ -339,6 +344,9 @@ header .container {
   width: 30px;
   height: 16px;
   cursor: pointer;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  transition: .3s ease-in;
 }
 
 .burger-icon .stripe1,
@@ -369,10 +377,16 @@ header .container {
   overflow: hidden;
 }
 
+.nav-open header .burger-icon {
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
 .nav-open header .burger-icon .stripe1,
 .nav-open header .burger-icon .stripe3 {
   height: 3px;
   -webkit-transition: 4s ease-in;
+  transition: 4s ease-in;
   transition: 4s ease-in;
 }
 
@@ -408,13 +422,27 @@ header .container {
 }
 
 .fixed-header {
-  height: 70px;
-  -webkit-transition: .5 ease-in;
-  transition: .5 ease-in;
+  height: 55px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.fixed-header .logo a img {
+  max-height: 40px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
 }
 
 .fixed-header .header-nav {
-  line-height: 70px;
+  line-height: 55px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.fixed-header .burger-icon {
+  top: 20px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
 }
 
 @-webkit-keyframes burgerStripe1Rotate {
@@ -820,7 +848,7 @@ header .container {
   margin-bottom: 90px;
 }
 
-.about .about-team-item-user-active:after {
+.about .about-user-active:after {
   position: absolute;
   display: block;
   width: 0;
@@ -832,12 +860,6 @@ header .container {
   border-right: 25px solid transparent;
   border-bottom: 18px solid #131316;
   border-left: 25px solid transparent;
-}
-
-.about .about-team-item-user-active .about-team-item-hide {
-  display: block;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
 }
 
 .about-item {
@@ -927,12 +949,11 @@ header .container {
   margin-bottom: 10px;
 }
 
-.about-team-list-item-user .about-team-item-hide {
+.about-team-list-item .about-team-item-description {
   position: absolute;
   top: auto;
   right: 0;
   left: 0;
-  display: none;
   overflow: hidden;
   height: 300px;
   margin-top: 60px;
@@ -943,14 +964,18 @@ header .container {
   background: #131316;
 }
 
-.about-team-list-item-user .about-team-item-hide h4 {
+.about-team-list-item .about-team-item-description .container {
+  max-width: 775px;
+}
+
+.about-team-list-item .about-team-item-description h4 {
   font-weight: 500;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: #ffe600;
 }
 
-.about-team-list-item-user .about-team-item-hide p {
+.about-team-list-item .about-team-item-description p {
   line-height: 25px;
   position: relative;
   max-width: 770px;
@@ -958,7 +983,7 @@ header .container {
   color: #fff;
 }
 
-.about-team-list-item-user .about-team-item-hide p button {
+.about-team-list-item .about-team-item-description p button {
   position: absolute;
   top: -50px;
   right: 0;
@@ -967,7 +992,7 @@ header .container {
   background: transparent;
 }
 
-.about-team-list-item-user .about-team-item-hide .social a {
+.about-team-list-item .about-team-item-description .social a {
   line-height: 37px;
   display: inline-block;
   width: 37px;
@@ -980,7 +1005,7 @@ header .container {
   border: 1px solid #fff;
 }
 
-.about-team-list-item-user .about-team-item-hide .social a:hover {
+.about-team-list-item .about-team-item-description .social a:hover {
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
   color: #ffe600;
@@ -1010,6 +1035,7 @@ header .container {
 .about-skills-item {
   margin-bottom: 60px;
   text-align: center;
+  vertical-align: top;
   text-transform: uppercase;
   color: #ffe600;
 }
@@ -1035,6 +1061,7 @@ header .container {
 }
 
 .about-reviews {
+  min-height: 300px;
   padding-top: 65px;
   padding-bottom: 95px;
   text-align: center;
@@ -1765,6 +1792,7 @@ header .container {
   height: 60px;
   margin-bottom: 30px;
   padding-left: 20px;
+  color: #fff;
   border: 1px solid #fff;
   outline: none;
   background: #131a1d;
@@ -1778,6 +1806,7 @@ header .container {
   margin-bottom: 25px;
   padding: 20px;
   resize: none;
+  color: #fff;
   border: 1px solid #fff;
   outline: none;
   background: #131a1d;
@@ -1831,25 +1860,26 @@ footer p {
   margin-bottom: 20px;
 }
 
-footer span {
+footer p a {
+  text-decoration: none;
   color: #ffe600;
 }
 
-footer a {
+footer .footer-social a {
   margin: 0 10px;
   -webkit-transition: .3s ease-out;
   transition: .3s ease-out;
   color: #fff;
 }
 
-footer a:hover {
+footer .footer-social a:hover {
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
   color: #ffe600;
 }
 
-footer a:focus,
-footer a:active {
+footer .footer-social a:focus,
+footer .footer-social a:active {
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
   opacity: .7;
@@ -2001,6 +2031,11 @@ footer a:active {
   .contacts-form input[type='email'],
   .contacts-form input[type='text'] {
     margin: 0 0 30px;
+  }
+
+  .about-team-list-item .about-team-item-description {
+    height: 360px;
+    padding-top: 20px;
   }
 }
 
